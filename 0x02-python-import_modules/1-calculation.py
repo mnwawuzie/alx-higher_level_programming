@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10000, 10000)
-digit = abs(number) % 10
-if number < 0:
-    digit = -digit
-print(f"Last digit of {number:d} is {digit:d} and is ", end="")
-if digit > 5:
-    print("greater than 5")
-elif digit == 0:
-    print("0")
-else:
-    print("less than 6 and not 0")
+
+if __name__ == "__main__":
+    """Print the sum, difference, multiple and quotient of 10 and 5."""
+    from calculator_1 import add, sub, mul, div
+
+    a = 10
+    b = 5
+
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
